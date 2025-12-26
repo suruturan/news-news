@@ -1,0 +1,19 @@
+{
+  "name": "news-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "bootstrap": "npm install",
+    "dev:web": "npm --workspace=@news/web dev",
+    "dev:admin": "npm --workspace=@news/admin dev",
+    "dev:mobile": "npm --workspace=@news/mobile start",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@react-navigation/native": "^7.1.21",
+    "@react-navigation/native-stack": "^7.8.0",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  }
+}
